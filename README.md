@@ -1,11 +1,4 @@
 # How to train a custom object detection model with the Tensorflow Object Detection API
-(ReadME inspired by [EdjeElectronics](https://github.com/EdjeElectronics))
-
-> Update: This README and Repository is now fully updated for Tensorflow 2. If you want to use Tensorflow 1 instead check out [my article](https://gilberttanner.com/blog/creating-your-own-objectdetector). If you want to train your model in Google Colab check out [the Tensorflow_2_Object_Detection_Train_model notebook](Tensorflow_2_Object_Detection_Train_model.ipynb).
-
-![Example Output](doc/output.png)
-
-## Introduction
 
 ## Steps:
 
