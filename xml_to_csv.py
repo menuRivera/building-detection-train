@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 def xml_to_csv(path):
     xml_list = []
     for xml_file in glob.glob(path + '/*.xml'):
+        # Itera todos los archivos .xml
         tree = ET.parse(xml_file)
         root = tree.getroot()
         for member in root.findall('object'):
@@ -30,8 +31,8 @@ def xml_to_csv(path):
 def main():
     for folder in ['train', 'test']:
         image_path = os.path.join(os.getcwd(), ('images/' + folder))
-        xml_df = xml_to_csv(image_path)
-        xml_df.to_csv(('images/'+folder+'_labels.csv'), index=None)
+        xml_df = xml_to_csv(image_path) # ej. images/train
+        xml_df.to_csv(('images/'+folder+'_labels.csv'), index=None) # genera el .csv de cada folder
     print('Successfully converted xml to csv.')
 
 
